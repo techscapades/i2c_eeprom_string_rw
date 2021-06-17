@@ -1,5 +1,5 @@
 # i2c_eeprom_string_rw
-read and write strings when using i2c eeprom with arduino, esp8266, eps32
+read and write strings when using multiple i2c eeprom with arduino, esp8266, eps32
 
 EEPROM_PAGE_WRITE
 
@@ -22,14 +22,18 @@ EEPROM_PAGE_WRITE
    1. updateEEPROM function to prevent unnecessary writes
    2. Input and Output String instead of Char directly
    3. AutoUpdate bool for update confirmation
-   4. length of data to be read isnt required anymore BUT
-      you need to avoid using "|" character when saving 
-      strings because its used as a terminating flag for 
-      automatic reading
+   4. Length of data to be read isnt required anymore so you can 
+      read directly from an address as well, BUT you need to avoid 
+      using a special character called: terminating_char, when saving 
+      strings because its used as a terminating flag for automatic reading
 
    ####LIMITATIONS####
-   CURRENT IMPLEMENTATION CAN ONLY WRITE UP TO 12 CHARACTER LONG STRINGS
+   CURRENT IMPLEMENTATION CAN ONLY WRITE UP TO 12 CHARACTER LONG STRINGS,
+   it is defined as maxChar, hopefully I or someone can improve this to match
+   the original sketch's function
    
    If you want to save numbers etc.. use String(your_number) and pass it
    into updateEEPROM. Use (mystring).toInt() or toDouble etc.. to convert
    the string back into your original data type
+   
+   
