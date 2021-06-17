@@ -28,6 +28,7 @@ EEPROM_PAGE_WRITE
       strings because its used as a terminating flag for automatic reading
 
    ####LIMITATIONS####
+   
    CURRENT IMPLEMENTATION CAN ONLY WRITE UP TO 12 CHARACTER LONG STRINGS,
    it is defined as maxChar, hopefully I or someone can improve this to match
    the original sketch's function
