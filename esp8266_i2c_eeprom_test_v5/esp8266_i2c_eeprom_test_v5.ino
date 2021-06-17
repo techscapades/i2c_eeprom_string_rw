@@ -24,9 +24,10 @@
       when saving strings because its used as a terminating flag for automatic reading
 
    ####LIMITATIONS####
-   CURRENT IMPLEMENTATION CAN ONLY WRITE UP TO 12 CHARACTER LONG STRINGS,
+   CURRENT IMPLEMENTATION CAN ONLY WRITE UP TO 12 CHARACTER LONG STRINGS PER ADDRESS, 
    it is defined as maxChar, hopefully I or someone can improve this to match
-   the original sketch's function
+   the original sketch's function, for now, split your strings at index 12 and 
+   write them to consecutive addresses, read from them accordingly :/
 
    If you want to save numbers etc.. use String(your_number) and pass it
    into updateEEPROM. Use (mystring).toInt() or toDouble etc.. to convert
