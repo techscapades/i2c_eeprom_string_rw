@@ -8,7 +8,7 @@
    https://www.hobbytronics.co.uk/eeprom-page-write
 
    Programme modified by @techscapades 2021, modified
-   sketch:
+   sketch: https://github.com/techscapades/i2c_eeprom_string_rw/tree/main
 
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
