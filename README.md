@@ -3,9 +3,8 @@ read and write strings when using multiple i2c eeprom with arduino, esp8266, eps
 
 EEPROM_PAGE_WRITE
 
-   Example program showing a method for writing large amounts of
-   data to an eeprom (24LC256/512 etc), whilst avoiding page write
-   boundaries
+   Example program showing a method for writing String
+   data to an eeprom (24LC256/512 etc)
 
    Original sketch: copyright www.hobbytronics.co.uk 2012,
    https://www.hobbytronics.co.uk/eeprom-page-write
