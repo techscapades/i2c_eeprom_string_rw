@@ -50,9 +50,9 @@ void setup(void)
 
   String test = "0123456789ab";
 
-  updateEEPROM(eeprom1, 0, test);
+  updateEEPROM(eeprom1, 0, test); //(i2c device address of eeprom, address to be written to, String to be written)
   Serial.println();
-  String resultString = readEEPROM(eeprom1, 0);
+  String resultString = readEEPROM(eeprom1, 0); //(i2c device address of eeprom, address to be read from)
   Serial.println(resultString);
 
 }
