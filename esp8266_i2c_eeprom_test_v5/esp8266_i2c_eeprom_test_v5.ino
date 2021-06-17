@@ -37,7 +37,7 @@
 #include <Wire.h>
 #define eeprom1 0x50    //Address of 24LC256 eeprom chip
 bool eeprom_autoupdate = true; //specify if you wanna control updates
-const String terminating_char = "|"; //ensure its something you wont use in your programme
+const String terminating_char = "|"; //ensure its something you wont use in any String!!!!!!
 const int maxChar = 12; //WARNING DO NOT CHANGE THIS!
 
 
