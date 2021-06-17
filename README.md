@@ -10,8 +10,8 @@ EEPROM_PAGE_WRITE
    Original sketch: copyright www.hobbytronics.co.uk 2012,
    https://www.hobbytronics.co.uk/eeprom-page-write
 
-   Programme modified by @techscapades 2021, modified
-   sketch: 
+   Modified sketch: @techscapades 2021,
+   https://github.com/techscapades/i2c_eeprom_string_rw/tree/main
 
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -22,6 +22,14 @@ EEPROM_PAGE_WRITE
    1. updateEEPROM function to prevent unnecessary writes
    2. Input and Output String instead of Char directly
    3. AutoUpdate bool for update confirmation
+   4. length of data to be read isnt required anymore BUT
+      you need to avoid using "|" character when saving 
+      strings because its used as a terminating flag for 
+      automatic reading
 
    ####LIMITATIONS####
    CURRENT IMPLEMENTATION CAN ONLY WRITE UP TO 12 CHARACTER LONG STRINGS
+   
+   If you want to save numbers etc.. use String(your_number) and pass it
+   into updateEEPROM. Use (mystring).toInt() or toDouble etc.. to convert
+   the string back into your original data type
