@@ -20,7 +20,7 @@ EEPROM_PAGE_WRITE
 
    Modifications by @techscapades:
    1. updateEEPROM function to prevent unnecessary writes
-   2. Input and Output String instead of Char directly
+   2. Input and Output String instead of Char directly (which was annoying)
    3. AutoUpdate bool for update confirmation
    4. Length of data to be read isnt required anymore so you can 
       read directly from an address as well, BUT you need to avoid 
