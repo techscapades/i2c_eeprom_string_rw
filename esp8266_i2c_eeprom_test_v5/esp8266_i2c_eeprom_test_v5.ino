@@ -97,6 +97,7 @@ void updateEEPROM(int deviceaddress, unsigned int eeaddress, String writeInput )
 
     //do a read for the data at the address
     readOutput = readEEPROM(deviceaddress, eeaddress);
+    readOutput = readOutput + terminating_char;
 
     Serial.println("readOutput before update");
     Serial.println(readOutput);
