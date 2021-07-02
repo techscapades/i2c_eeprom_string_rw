@@ -1,5 +1,5 @@
 # i2c eeprom string rw
-read and write strings when using multiple i2c eeprom with arduino, esp8266, eps32
+read and write strings when using multiple i2c eeprom with arduino, esp8266
 
 EEPROM_PAGE_WRITE
 
